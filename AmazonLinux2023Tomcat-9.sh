@@ -5,9 +5,9 @@ sudo yum install java-11-amazon-corretto -y
 #sudo useradd -m -U -d /opt/tomcat tomcat
 
 cd /tmp
-wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.75/bin/apache-tomcat-9.0.75.tar.gz
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.82/bin/apache-tomcat-9.0.82.tar.gz
 sudo tar xzvf apache-tomcat-9*tar.gz -C /opt
-sudo mv /opt/apache-tomcat-9.0.75 /opt/tomcat
+sudo mv /opt/apache-tomcat-9.0.82 /opt/tomcat
 sudo chown -R ec2-user:ec2-user /opt/tomcat
 
 sudo find /opt/tomcat/bin -name "*.sh" -exec sudo chmod 775 {} \;
